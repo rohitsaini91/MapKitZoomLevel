@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		22A8B0E724988C39000DBF7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8B0E624988C39000DBF7F /* AppDelegate.swift */; };
-		22A8B0E924988C39000DBF7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8B0E824988C39000DBF7F /* SceneDelegate.swift */; };
 		22A8B0EB24988C39000DBF7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8B0EA24988C39000DBF7F /* ViewController.swift */; };
 		22A8B0EE24988C39000DBF7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A8B0EC24988C39000DBF7F /* Main.storyboard */; };
 		22A8B0F024988C3E000DBF7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A8B0EF24988C3E000DBF7F /* Assets.xcassets */; };
 		22A8B0F324988C3E000DBF7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A8B0F124988C3E000DBF7F /* LaunchScreen.storyboard */; };
+		22A8B0FC24989187000DBF7F /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8B0FB24989187000DBF7F /* CustomAnnotation.swift */; };
+		22A8B0FF24989332000DBF7F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8B0FE24989332000DBF7F /* Constants.swift */; };
+		22A8B1022498B86B000DBF7F /* MyMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8B1012498B86B000DBF7F /* MyMap.swift */; };
+		22A8B1042498B913000DBF7F /* MyMapListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8B1032498B913000DBF7F /* MyMapListener.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22A8B0E324988C39000DBF7F /* AppleMapZoomLevel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMapZoomLevel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A8B0E624988C39000DBF7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22A8B0E824988C39000DBF7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		22A8B0EA24988C39000DBF7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22A8B0ED24988C39000DBF7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22A8B0EF24988C3E000DBF7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22A8B0F224988C3E000DBF7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A8B0F424988C3E000DBF7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A8B0FB24989187000DBF7F /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		22A8B0FE24989332000DBF7F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		22A8B1012498B86B000DBF7F /* MyMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMap.swift; sourceTree = "<group>"; };
+		22A8B1032498B913000DBF7F /* MyMapListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapListener.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,10 @@
 		22A8B0E524988C39000DBF7F /* AppleMapZoomLevel */ = {
 			isa = PBXGroup;
 			children = (
+				22A8B1002498B543000DBF7F /* MyMap */,
+				22A8B0FD24989325000DBF7F /* Constants */,
+				22A8B0FA24989171000DBF7F /* Annotation */,
 				22A8B0E624988C39000DBF7F /* AppDelegate.swift */,
-				22A8B0E824988C39000DBF7F /* SceneDelegate.swift */,
 				22A8B0EA24988C39000DBF7F /* ViewController.swift */,
 				22A8B0EC24988C39000DBF7F /* Main.storyboard */,
 				22A8B0EF24988C3E000DBF7F /* Assets.xcassets */,
@@ -65,6 +73,31 @@
 				22A8B0F424988C3E000DBF7F /* Info.plist */,
 			);
 			path = AppleMapZoomLevel;
+			sourceTree = "<group>";
+		};
+		22A8B0FA24989171000DBF7F /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				22A8B0FB24989187000DBF7F /* CustomAnnotation.swift */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+		22A8B0FD24989325000DBF7F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				22A8B0FE24989332000DBF7F /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		22A8B1002498B543000DBF7F /* MyMap */ = {
+			isa = PBXGroup;
+			children = (
+				22A8B1012498B86B000DBF7F /* MyMap.swift */,
+				22A8B1032498B913000DBF7F /* MyMapListener.swift */,
+			);
+			path = MyMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A8B1042498B913000DBF7F /* MyMapListener.swift in Sources */,
 				22A8B0EB24988C39000DBF7F /* ViewController.swift in Sources */,
 				22A8B0E724988C39000DBF7F /* AppDelegate.swift in Sources */,
-				22A8B0E924988C39000DBF7F /* SceneDelegate.swift in Sources */,
+				22A8B0FC24989187000DBF7F /* CustomAnnotation.swift in Sources */,
+				22A8B1022498B86B000DBF7F /* MyMap.swift in Sources */,
+				22A8B0FF24989332000DBF7F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = AppleMapZoomLevel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6Q233F3ZPX;
 				INFOPLIST_FILE = AppleMapZoomLevel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

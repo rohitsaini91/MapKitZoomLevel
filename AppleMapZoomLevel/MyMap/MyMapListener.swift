@@ -1,9 +1,17 @@
 //
-//  MyMapListener.swift
-//  AppleMapZoomLevel
+//  MyMapDelegate.swift
+//  MapKitWrap
 //
-//  Created by Rohit Saini on 16/06/20.
-//  Copyright © 2020 Rohit Saini. All rights reserved.
+//  Created by Dmytro Babych on 5/16/17.
+//  Copyright © 2017 Babych Studio. All rights reserved.
 //
-
 import Foundation
+import MapKit
+
+@objc public protocol MyMapListener {
+    
+    
+    @objc optional func mapView(_ mapView: MyMap, rotationDidChange rotation: Double)
+    // message is sent when map rotation is changed
+    
+}

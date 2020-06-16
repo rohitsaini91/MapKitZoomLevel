@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import MapKit
+
+class CustomAnnotation: NSObject, MKAnnotation
+{
+    var coordinate: CLLocationCoordinate2D
+    var title: String?
+    var customType:annotationType = .API
+    
+    init(coor: CLLocationCoordinate2D)
+    {
+        coordinate = coor
+    }
+}
