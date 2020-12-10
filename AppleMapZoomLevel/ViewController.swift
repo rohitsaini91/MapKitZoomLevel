@@ -57,6 +57,17 @@ extension ViewController:MKMapViewDelegate{
     
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         zoomLbl.text = "Current Zoom: \(mapView.currentZoomLevel)"
+        let annotations = self.mapView.annotations
+
+        for annotation in annotations
+        {
+            if mapView.currentZoomLevel < 15{
+                mapView.view(for: annotation as! CustomAnnotation)?.isHidden = false
+            }
+            else{
+                mapView.view(for: annotation as! CustomAnnotation)?.isHidden = true
+            }
+        }
     }
     
     

@@ -2,17 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "ic_green_dot.png",
+      "filename" : "circle-dashed-4-64.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "ic_green_dot@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "ic_green_dot@3x.png",
       "scale" : "3x"
     }
   ],
